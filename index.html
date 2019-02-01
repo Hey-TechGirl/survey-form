@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <!-- Metadata Content -->
+  <head>
+    <meta charset="utf-8">
+    <title>Girl Learning Tech - Survey</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <!-- Display Content -->
+  <body>
+    <h1 id="title">Survey</h1>
+    <main>
+      <p id="description">Hey it's nice to see you here, I would love to know more about you!</p>
+      <!-- Form Start Here -->
+      <form id="survey-form" action="index.html" method="get">
+        <div class="row-tab">
+          <div class="labels">
+            <label id="name-label" for="name">Name:</label>
+          </div>
+          <div class="right-tab">
+            <input autofocus type="text" name="name" placeholder="Enter your name" id="name" required>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="labels">
+            <label id="email-label" for="email">E-mail:</label>
+          </div>
+          <div class="right-tab">
+            <input type="email" name="email" placeholder="Enter your Email" required>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="labels">
+            <label id="number-label" for="age"></label>
+          </div>
+          <div class="right-tab">
+            <input type="number" name="age" min="10" max="100" placeholder="Age">
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="labels">
+            <label for="language">Which option best describes the code you are trying to learn?</label>
+          </div>
+          <div class="right-tab">
+            <select id="dropdown" name="language">
+              <option disabled selected value>Select an option</option>
+              <option value="html">HTML5</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+              <option value="r-programming">R</option>
+              <option value="sql">SQL</option>
+              <option value="java">Java</option>
+              <option value="c-plus">C++</option>
+              <option value="c-sharp">C#</option>
+              <option value="swif">Swift</option>
+              <option value="php">PHP</option>
+              <option value="ruby">Ruby</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="labels">
+            <label for="bootcamp">How likely are you to start a coding bootcamp in the coming months?</label>
+          </div>
+          <div class="right-tab">
+            <ul id="bootcamp">
+              <li class="radio"><label><input type="radio" name="radio-buttons" class="bootcamp" value="5">Very Likely</label></li>
+              <li class="radio"><label><input type="radio" name="radio-buttons" class="bootcamp" value="4">Definitely</label></li>
+              <li class="radio"><label><input type="radio" name="radio-buttons" class="bootcamp" value="3">Maybe</label></li>
+              <li class="radio"><label><input type="radio" name="radio-buttons" class="bootcamp" value="2">Not sure</label></li>
+              <li class="radio"><label><input type="radio" name="radio-buttons" class="bootcamp" value="1">Extremely Unlikely</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="labels">
+            <label for="most-like">What would you most like to find in a programming online course?</label>
+          </div>
+          <div class="right-tab">
+            <select id="most-like" name="mostLike">
+              <option disabled selected value>Select an option</option>
+              <option value="exercises">Practical Exercises</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="mentor">Mentor</option>
+              <option value="community">Community</option>
+              <option value="openSource">Open Source</option>
+              <option value="fast">Fast Videos Lessons</option>
+              <option value="long">Long Videos Lessons</option>
+            </select>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="labels">
+            <label for="preferences">
+              Things that are important for you<br>(Check all that apply):
+            </label>
+          </div>
+          <div class="right-tab">
+            <ul id="preferences">
+              <li class="checkbox"><label><input type="checkbox" name="preferences" value="1">Front-end Projects</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="preferences" value="2">Back-end Projects</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="preferences" value="3">Data Science Projects</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="preferences" value="4">Challenges</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="preferences" value="5">Open Source Community</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="preferences" value="6">Personal Mentor</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="preferences" value="7">Content in Video</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="preferences" value="8">Forum</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="preferences" value="9">Update Content</label></li>
+            </ul>
+          </div>
+          <div class="row-tab">
+            <div class="labels">
+              <label for="comments">Any Comments or Suggestions?</label>
+            </div>
+            <div class="right-tab">
+              <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comment here..."></textarea>
+            </div>
+          </div>
+        </div>
+        <button id="submit" type="submit" name="button">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
