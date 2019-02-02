@@ -5,12 +5,14 @@
     <meta charset="utf-8">
     <title>Girl Learning Tech - Survey</title>
     <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
   <!-- Display Content -->
   <body>
-    <h1 id="title">Survey</h1>
+    <h1 id="title"><img src="girl-logo.png" alt="Logotype">&middot; &#x2661; &middot; Survey</h1>
     <main>
-      <p id="description">Hey it's nice to see you here, I would love to know more about you!</p>
+      <p id="description">Hey it's nice to see you here.<br> I would love to know more about you!</p>
       <!-- Form Start Here -->
       <form id="survey-form" action="index.html" method="get">
         <div class="row-tab">
@@ -18,7 +20,7 @@
             <label id="name-label" for="name">Name:</label>
           </div>
           <div class="right-tab">
-            <input autofocus type="text" name="name" placeholder="Enter your name" id="name" required>
+            <input class="input-field" autofocus type="text" name="name" placeholder="Enter your name" id="name" required>
           </div>
         </div>
         <div class="row-tab">
@@ -26,15 +28,15 @@
             <label id="email-label" for="email">E-mail:</label>
           </div>
           <div class="right-tab">
-            <input type="email" name="email" placeholder="Enter your Email" required>
+            <input class="input-field" type="email" name="email" placeholder="Enter your Email" required>
           </div>
         </div>
         <div class="row-tab">
           <div class="labels">
-            <label id="number-label" for="age"></label>
+            <label id="number-label" for="age">Age: </label>
           </div>
           <div class="right-tab">
-            <input type="number" name="age" min="10" max="100" placeholder="Age">
+            <input class="input-field" type="number" name="age" min="10" max="100" placeholder="Age">
           </div>
         </div>
         <div class="row-tab">
@@ -79,7 +81,7 @@
             <label for="most-like">What would you most like to find in a programming online course?</label>
           </div>
           <div class="right-tab">
-            <select id="most-like" name="mostLike">
+            <select id="dropdown" name="mostLike">
               <option disabled selected value>Select an option</option>
               <option value="exercises">Practical Exercises</option>
               <option value="challenges">Challenges</option>
@@ -116,12 +118,15 @@
               <label for="comments">Any Comments or Suggestions?</label>
             </div>
             <div class="right-tab">
-              <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comment here..."></textarea>
+              <textarea id="comments" class="input-field"  name="comments" rows="4" placeholder="Enter your comment here..."></textarea>
             </div>
           </div>
         </div>
         <button id="submit" type="submit" name="button">Submit</button>
       </form>
     </main>
+    <footer id="contact">
+      <p id="made-by">&#x2661; | made by <img src="http://static1.squarespace.com/static/5bd18506b10f2528afd8d0f6/t/5bf67d56f950b75bc49c323e/1545234415032/?format=1500w" alt="Girl Learning Tech">| &#x2661;</p>
+    </footer>
   </body>
 </html>

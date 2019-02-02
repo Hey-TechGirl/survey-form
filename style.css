@@ -1,5 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700);
 
+html,
+body {
+  margin: 0px;
+  background-color: white;
+  text-align: center;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  min-width: 350px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px;
+}
+
+img {
+  vertical-align: middle;
+  width: 200px;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+main {
+  background-color: #FBFCFC;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  border: 0.4px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.05);
+}
 
 ul#bootcamp, ul#preferences {
   list-style: none;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.right-tab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 25px;
+  width: 250px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+
+textarea#comments {
+  height: 50px;
+}
+
+.bootcamp,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#dropdown {
+  height: 35px;
+  width: 160px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 18px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+#submit {
+  position: relative;
+  background-color: #4DCCC2;
+  color: white;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 40px;
+  width: 100px;
+  margin: 10px;
+  border: 0px solid;
+  cursor: pointer;
+}
+
+
+footer p  {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: grey;
+  letter-spacing: 3px;
+  background-color: #FBFCFC;
+}
+
+footer img {
+  width: 125px;
+}
+
+@media screen and (max-width: 1300px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  img {
+    width: 40%;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .right-tab {
+    width: 90%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
 }
